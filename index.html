@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleição da Turma</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form>
+
+        <fieldset> <!--Separador de campos-->
+    
+            <label for="name">Seu Nome</label>
+            <input type="text" name="name" placeholder="Coloque aqui o seu nome" required>
+            
+            <label for="age">Sua Idade</label>
+            <input type="text" name="age" maxlength="2" placeholder="Coloque aqui a sua idade" required> 
+
+            <label for="bday">Sua data de nascimento</label>
+            <input type="date" name="nascimento" >
+
+        </fieldset>
+
+        <fieldset>
+
+            <label for="sexo">Qual o seu gênero</label>
+    
+            <label>
+            <input type="radio" name="sexo" value="feminino" required>Feminino</label>
+            <label>
+            <input type="radio" name="sexo" value="masculino" required>Masculino</label>
+            <label>
+            <input type="radio" name="sexo" value="naodizer" required>Prefiro Não Informar</label>
+
+        </fieldset>
+    
+        <fieldset>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Coloque aqui o seu email" required>
+
+            <label for="password">Senha do Email</label>
+            <input type="password" name="senha" placeholder="Coloque aqui a senha do seu email" required>
+            
+            <label for="city">Qual a sua cidade?</label>
+            <select size="1" name="city">
+                <option value="VAZIO">SELECIONE</option>
+                <option value="BC">Barcelona</option>
+                <option value="BS">Boa Saúde</option>
+                <option value="LV">Lagoa de Velhos</option>
+                <option value="RC">Riachuelo</option>
+                <option value="SM">Santa Maria</option>
+                <option value="SP">São Pedro</option>
+                <option value="SPP">São Paulo do Potengi</option>
+            </select>
+        
+        </fieldset>
+            
+        <fieldset>
+            
+            <label for="curriculo">Seu Curriculo</label>
+            <br> <br>
+            <textarea name="curriculo" rows="20" cols="100">Escreva aqui as suas habilidade e experiencias passadas</textarea>
+
+        </fieldset>
+
+        <fieldset>
+
+            <label for="agendamento">Agende uma data para a entrevista</label>
+            <input type="datetime-local" name="entrevista">
+
+
+        </fieldset>
+
+
+        <fieldset>
+
+            <label for="receber">Você aceita receber avisos por email?</label>
+            <br>
+            <input type="checkbox" name="concordo" value="concordo">concordo
+            <input type="checkbox" name="discordo" value="discordo">discordo
+
+        </fieldset>
+        
+        <button type="submit">Enviar</button>
+    
+
+    </form>
+
+</body>
+</html>
